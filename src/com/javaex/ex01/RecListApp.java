@@ -15,12 +15,18 @@ public class RecListApp {
 		Rectangle r03 = new Rectangle(3,3);
 		Rectangle r04 = new Rectangle(4,5);
 		
-		
 		System.out.println("#사각형 4개 리스트에 추가=========================================");
+		
 		//사각형4개 리스트에 추가 코드 작성
+		rList.add(r01);
+		rList.add(r02);
+		rList.add(r03);
+		rList.add(r04);
 		
 		//리스트 모두를 draw하는 메소드 실행
-		
+		for(Rectangle r : rList) {
+			r.draw();
+		}
 		
 
 		System.out.println("#3번째 사각형(3, 3) 삭제==========================================");
